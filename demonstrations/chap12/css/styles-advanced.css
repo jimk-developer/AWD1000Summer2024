@@ -1,0 +1,119 @@
+/* 
+:nth-child(n) Selector 
+Applies styles based on the position of the element among its siblings 
+*/
+
+/* Odd rows */
+.table-one tr:nth-child(odd) {
+    background-color: lightgray; /* Odd rows have light gray background */
+}
+
+/* Even rows */
+.table-one tr:nth-child(even) {
+    background-color: lightblue; /* Even rows have light blue background */
+}
+
+/* Every third row */
+.table-one tr:nth-child(3n) {
+    font-weight: bold; /* Every third row is bold */
+}
+
+/* Rows with position 2n+1 */
+.table-one tr:nth-child(2n+1) {
+    color: red; /* Rows with position 2n+1 are red */
+}
+
+/* Rows with position 3n+1 */
+.table-one tr:nth-child(3n+1) {
+    text-decoration: underline; /* Rows with position 3n+1 are underlined */
+}
+
+/* 
+:nth-last-child(n) Selector 
+Applies styles based on the position of the element among its siblings from the end 
+*/
+
+/* Odd rows from the end */
+.table-two tr:nth-last-child(odd) {
+    background-color: lightyellow; /* Odd rows from the end have light yellow background */
+}
+
+/* Even rows from the end */
+.table-two tr:nth-last-child(even) {
+    background-color: lightgreen; /* Even rows from the end have light green background */
+}
+
+/* Every third row from the end */
+.table-two tr:nth-last-child(3n) {
+    font-style: italic; /* Every third row from the end is italic */
+}
+
+/* Rows with position 2n+1 from the end */
+.table-two tr:nth-last-child(2n+1) {
+    color: purple; /* Rows with position 2n+1 from the end are purple */
+}
+
+/* Rows with position 3n+1 from the end */
+.table-two tr:nth-last-child(3n+1) {
+    text-decoration: overline; /* Rows with position 3n+1 from the end are overlined */
+}
+
+/* 
+:nth-of-type(n) Selector 
+Applies styles based on the position of the element among its siblings of the same type 
+*/
+
+/* Odd rows of the same type */
+table.nth-of-type tr:nth-of-type(odd) {
+    background-color: lightcoral; /* Odd rows of the same type have light coral background */
+}
+
+/* Even rows of the same type */
+table.nth-of-type tr:nth-of-type(even) {
+    background-color: lightcyan; /* Even rows of the same type have light cyan background */
+}
+
+/* Every third row of the same type */
+table.nth-of-type tr:nth-of-type(3n) {
+    border: 2px solid black; /* Every third row of the same type has a black border */
+}
+
+/* Rows with position 2n+1 of the same type */
+table.nth-of-type tr:nth-of-type(2n+1) {
+    font-size: larger; /* Rows with position 2n+1 of the same type have larger font size */
+}
+
+/* Rows with position 3n+1 of the same type */
+table.nth-of-type tr:nth-of-type(3n+1) {
+    font-weight: bold; /* Rows with position 3n+1 of the same type are bold */
+}
+
+/* 
+:nth-last-of-type(n) Selector 
+Applies styles based on the position of the element among its siblings of the same type from the end 
+*/
+
+/* Odd rows of the same type from the end */
+table.nth-last-of-type tr:nth-last-of-type(odd) {
+    background-color: lightpink; /* Odd rows of the same type from the end have light pink background */
+}
+
+/* Even rows of the same type from the end */
+table.nth-last-of-type tr:nth-last-of-type(even) {
+    background-color: lightseagreen; /* Even rows of the same type from the end have light sea green background */
+}
+
+/* Every third row of the same type from the end */
+table.nth-last-of-type tr:nth-last-of-type(3n) {
+    text-decoration: line-through; /* Every third row of the same type from the end is lined-through */
+}
+
+/* Rows with position 2n+1 of the same type from the end */
+table.nth-last-of-type tr:nth-last-of-type(2n+1) {
+    font-style: italic; /* Rows with position 2n+1 of the same type from the end are italic */
+}
+
+/* Rows with position 3n+1 of the same type from the end */
+table.nth-last-of-type tr:nth-last-of-type(3n+1) {
+    color: darkblue; /* Rows with position 3n+1 of the same type from the end are dark blue */
+}

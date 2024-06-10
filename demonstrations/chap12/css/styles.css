@@ -1,0 +1,53 @@
+:root {
+    --table-heading-color:#dcd2c3; 
+    --table-row-odd-color: #f6f4ec;
+    --table-row-even-color: #f3eee1;
+    --table-row-hover-color: lightblue; 
+    --table-border-color: #808080;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+caption {
+    margin: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    border: 1px solid #808080;
+}
+thead tr, tfoot tr {
+    background-color: var(--table-heading-color);
+}
+tfoot tr td{
+    font-weight: bold;
+}
+th {
+    padding: 12px 15px;
+    border: 2px solid var(--table-border-color);
+}
+td {
+    padding: 12px 15px;
+    border: 2px solid var(--table-border-color);
+    text-align: right;
+}
+tbody tr td:nth-child(1){
+    text-align: left;
+}
+tfoot tr td:nth-child(1){
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: var(--table-row-even-color);
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd-color);
+}
+tbody tr:hover {
+    background-color: var(--table-row-hover-color);
+}
