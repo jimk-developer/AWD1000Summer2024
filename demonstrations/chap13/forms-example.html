@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<form id="myFirstform" action="/submit" method="post" enctype="Application/x-www-form-urlencoded">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required tabindex="1">
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required tabindex="12">
+    </div>
+    <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required tabindex="3">
+    </div>
+    <div class="form-group">
+        <input type="hidden" id="hiddenField" name="hiddenField" value="hiddenValue">
+    </div>
+
+    <fieldset class="form-group">
+        <legend>Contact Preferences</legend>
+        <div class="form-group inline centered">
+            <label>Preferred Contact Method:</label>
+            <label for="email"><input type="radio" id="email" name="contact"  tabindex="4"> Email</label>
+            <label for="phone"><input type="radio" id="phone" name="contact"  tabindex="5"> Phone</label>
+        </div>
+        <div class="form-group inline centered">
+            <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe" value="newsletter" tabindex="6"> Subscribe to newsletter</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <legend>Favorite Hobbies</legend>
+        <div class="form-group inline centered">
+            <label for="hobby1"><input type="checkbox" id="hobby1" name="gaming" tabindex="7"> Gaming</label>
+            <label for="hobby2"><input type="checkbox" id="hobby2" name="sports" tabindex="8"> Sports</label>
+            <label for="hobby3"><input type="checkbox" id="hobby3" name="travel" tabindex="9"> Travel</label>
+        </div>
+    </fieldset>
+
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" tabindex="10" size="3">
+            <optgroup label="North America">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="uk">UK</option>
+                <option value="germany">Germany</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" style="overflow: auto;" accesskey="c"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required accesskey="e">
+    </div>
+    <div class="form-group">
+        <label for="confirm-email">Confirm Email:</label>
+        <input type="email" id="confirm-email" name="confirm-email" required>
+    </div>
+    <div class="form-group">
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" accesskey="p">
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100">
+    </div>
+    <div class="form-group">
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+    </div>
+    <div class="form-group">
+        <label for="fileUpload">Upload a file:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+    </div>
+    <div class="form-group">
+        <label for="autocomplete">Autocomplete:</label>
+        <input list="suggestions" id="autocomplete" name="autocomplete">
+        <datalist id="suggestions">
+            <option value="Option 1">
+            <option value="Option 2">
+            <option value="Option 3">
+        </datalist>
+    </div>
+    <div class="form-group">
+        <label for="pattern">Pattern:</label>
+        <input type="text" id="pattern" name="pattern" pattern="\d{4}-\d{2}-\d{2}" title="Format: YYYY-MM-DD">
+    </div>
+
+    <fieldset class="form-group">
+        <legend>Credit Card Information</legend>
+        <div class="form-group">
+            <label for="cc-number">Credit Card Number:</label>
+            <input type="text" id="cc-number" name="cc-number" pattern="\d{13,16}">
+        </div>
+        <div class="form-group">
+            <label for="cc-expiration">Expiration Date (MM/YY):</label>
+            <input type="text" id="cc-expiration" name="cc-expiration" pattern="\d{2}/\d{2}">
+        </div>
+        <div class="form-group">
+            <label for="cc-csc">CSC Code:</label>
+            <input type="text" id="cc-csc" name="cc-csc" pattern="\d{3}">
+        </div>
+        <div class="form-group">
+            <label for="billing-address">Billing Address:</label>
+            <input type="text" id="billing-address" name="billing-address">
+        </div>
+        <div class="form-group">
+            <label for="billing-address2">Address Line 2:</label>
+            <input type="text" id="billing-address2" name="billing-address2">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="" disabled selected>Select your state</option>
+                <option value="MO" >Missouri (MO)</option>
+                <option value="IL">Illinois (IL)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" pattern="\d{5}">
+        </div>
+    </fieldset>
+
+    <div class="form-group">
+        <label for="progress">Form Completion:</label>
+        <progress id="progress" value="70" max="100"></progress>
+    </div>
+
+    <div class="form-group inline">
+        <button type="submit" class="submit-button">Submit</button>
+        <button type="reset" class="reset-button">Reset</button>
+        <button type="button" class="image-button">
+            <img src="https://via.placeholder.com/20" alt="Image Button"> Image Button
+        </button>
+    </div>    
+</form>
+
+</body>
+</html>
